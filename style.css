@@ -15,12 +15,32 @@ body,header,main,footer{
     min-width: 400px;
 }
 
+.logo{
+    background-color: #F3FF33;
+    text-align: center;
+}
+
 main{
     min-height: 200px;
 }
 
 .titulos{
-    font: 30px Arial, sans serif;
+    font-family: 'Dancing Script', cursive;
+    color: navy;
+    
+}
+
+.seccion p{
+    font-size: 25px;
+}
+
+footer{
+    min-height: 100px;
+    background-color: #F3FF33;
+}
+
+i{
+    font-size: 40px;
     color: navy;
     
 }

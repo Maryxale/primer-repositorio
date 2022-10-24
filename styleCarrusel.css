@@ -3,11 +3,6 @@ margin: 0;
 padding: 0;
 }
 
-h2{
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
-}
-
 .pic-ctn {
 width: 100vw;
 height: 200px;
@@ -41,14 +36,14 @@ height: 200px;
 position: relative;
 width: 100vw;
 height: 300px;
-margin-top: 15vh;
+margin-top: 2vh;
 }
 
 .pic-ctn > img {
 
 position: absolute;
 top: 0;
-left: calc(50% - 100px);
+left: calc(35% - 100px);
 opacity: 0;
 animation: display 10s infinite;
 
@@ -66,3 +61,4 @@ animation-delay: 6s;
 img:nth-child(5) {
 animation-delay: 8s;
 }
+

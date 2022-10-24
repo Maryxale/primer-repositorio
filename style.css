@@ -122,6 +122,12 @@ main{
     display: inline-block;
 }
 
+.contenido1 p{
+    width: 30em;
+    height: 20em;
+    background-color: blue;
+
+}
 
 
 

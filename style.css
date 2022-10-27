@@ -32,6 +32,10 @@ main{
     
 }
 
+h2{
+    text-align: center;
+}
+
 .seccion p{
     font-size: 25px;
 }
@@ -122,6 +126,34 @@ main{
 
 
 .foto3{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.flexbox2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.fotoA{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.fotoB{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.fotoC{
     width: 30vw;
     height: 30vh;
     border: gray solid 2px;

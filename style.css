@@ -32,12 +32,12 @@ main{
     
 }
 
-h2{
+h2,h1{
     text-align: center;
 }
 
 .seccion p{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 footer{
@@ -166,6 +166,20 @@ main{
     background-color: blue;
 
 }
+
+/*Pagina responsive*/
+
+@media only screen and (max-width: 650px){
+    *{background-color: #33A2FF;}
+
+} 
+
+@media only screen and (max-width: 500px){
+    *{background-color: #5B33FF;}
+
+} 
+
+
 
 
 

@@ -22,9 +22,16 @@ body,header,nav,main,footer{
     text-align: center;
 }
 
-main{
+.main{
     min-height: 200px;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 20px;
+    
+
 }
+
+
 
 .titulos{
     font-family: 'Dancing Script', cursive;
@@ -100,6 +107,7 @@ i{
 
 main{
     min-height: 200px;
+    
 }
 
 .container{
@@ -161,18 +169,30 @@ main{
 }
 
 .contenido1 p{
-    width: 30em;
-    height: 20em;
-    background-color: blue;
+    font-size: 20px;
+    padding: 10px;
+    
 
 }
 
 /*Pagina responsive*/
 
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
 @media only screen and (max-width: 650px){
     *{background-color: #33A2FF;}
+    
+    
+}
 
-} 
+
+
 
 @media only screen and (max-width: 500px){
     *{background-color: #5B33FF;}

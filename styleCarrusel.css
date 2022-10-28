@@ -43,7 +43,7 @@ margin-top: 2vh;
 
 position: absolute;
 top: 0;
-left: calc(50% - 100px);
+left: calc(15% - 100px);
 opacity: 0;
 animation: display 10s infinite;
 

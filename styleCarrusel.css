@@ -1,66 +1,69 @@
-html, body {
-margin: 0;
-padding: 0;
+body {
+    margin: 10px;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-.pic-ctn {
-width: 100vw;
-height: 200px;
+.auto-slider{
+    position: relative;
+    box-sizing: content-box;
+    display: inline-block;
+    padding: 10px 10px 20px;
+    background: #121;
+    max-width: 720px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@keyframes display {
-0% {
-    transform: translateX(200px);
-    opacity: 0;
-}
-10% {
-    transform: translateX(0);
-    opacity: 1;
-}
-20% {
-    transform: translateX(0);
-    opacity: 1;
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left;height: 400px; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 45s sliding ease infinite; 
 }
 
-30% {
-    transform: translateX(-200px);
-    opacity: 0;
-}
-100% {
-    transform: translateX(-200px);
-    opacity: 0;
-}
-}
-
-.pic-ctn {
-position: relative;
-width: 100vw;
-height: 300px;
-margin-top: 2vh;
+/* Slider indicator */
+.indicator{
+    width: 100%;
+    max-width: 720px;
+    height: 6px;
+    background: #2AF598;
+    position: absolute;
+    bottom: 0;
+    
+    animation: indicating 9s ease infinite; 
+    
 }
 
-.pic-ctn > img {
 
-position: absolute;
-top: 0;
-left: calc(15% - 100px);
-opacity: 0;
-animation: display 10s infinite;
+@keyframes sliding{
+    0%{left: 0%; }
+    20%{left: -100%;}
+    40%{left: -200%;}
+    60%{left: -300%;}
+    80%{left: -400%;}
+    100%{left: 0%;}
+}        
 
-}
-
-img:nth-child(2) {
-animation-delay: 2s;
-}
-img:nth-child(3) {
-animation-delay: 4s;
-}
-img:nth-child(4) {
-animation-delay: 6s;
-}
-img:nth-child(5) {
-animation-delay: 8s;
-}
+@keyframes indicating{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0;
+    }
+}  
+ 
 
 
 

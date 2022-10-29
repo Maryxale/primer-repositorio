@@ -162,14 +162,14 @@ main{
 .foto1{
     width: 30vw;
     height: 30vh;
-    border: gray solid 2px;
+    border: rgb(255, 255, 255) solid 2px;
     display: inline-block;
 }
 
 .foto2{
     width: 30vw;
     height: 30vh;
-    border: gray solid 2px;
+    border: rgb(255, 255, 255) solid 2px;
     display: inline-block;
 }
     
@@ -178,7 +178,7 @@ main{
 .foto3{
     width: 30vw;
     height: 30vh;
-    border: gray solid 2px;
+    border: rgb(255, 255, 255) solid 2px;
     display: inline-block;
 }
 

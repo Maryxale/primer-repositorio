@@ -62,47 +62,91 @@ i{
     
 }
 
+/*navbar responsive*/
 
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
 
-#menu ul{
-    padding: 0;
+nav{
+    width: 100%;
+    background: #4e94ab;
+}
+
+#btn-menu{
+    display: none;
+}
+
+nav label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+nav label :hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+.menu ul{
     margin: 0;
     list-style: none;
-}
-
-#menu ul li{
-    float: left;
-    
+    padding: 0;
+    display: flex;
 
 }
 
-#menu a{
-    text-decoration: none;
+.menu li{
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+.menu li :hover{
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+.menu li a{
     display: block;
-    color: whitesmoke;
-    padding: 12px 26px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    
+    padding: 15px 20px;
+    color: #fff ;
+    text-decoration: none;
 }
 
-#menu{
-    background-color: #337DFF;
-    width: 1330px;
-    height: 52px;
+@media (max-width:650px){
+    nav label{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background: #4e94ab;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+
+
 }
 
-.barra{
-    color: navy;
-    padding: 15px 0 0 0;
-}
 
-#menu a :hover{
-    color: rgba(255, 255, 0, 0.986);
-    background: rgb(0, 0, 0.2);
-    
-
-}
 
 
 main{
@@ -186,7 +230,7 @@ main{
 }
 
 @media only screen and (max-width: 650px){
-    *{background-color: #33A2FF;}
+    
     
     
 }
@@ -195,7 +239,7 @@ main{
 
 
 @media only screen and (max-width: 500px){
-    *{background-color: #5B33FF;}
+    
 
 } 
 

@@ -9,7 +9,7 @@ html{
 }
 
 body,header,nav,main,footer{
-    border: 3px solid aqua;
+    /*border: 3px solid aqua;*/
     min-height: 50px;
     margin: 0.5rem;
     min-width: 400px;
@@ -145,8 +145,6 @@ nav label :hover{
 
 
 }
-
-
 
 
 main{
@@ -304,6 +302,52 @@ main{
     border: gray solid 2px;
     display: inline-block;
 }
+
+.principal{
+    font-size: 20px;
+    padding: 15px;
+
+}
+
+#name{
+    padding: 5px;
+}
+
+#msg{
+    padding: 30px;
+}
+
+#adults{
+    padding: 5px;
+}
+
+#mail{
+    padding: 5px;
+}
+
+#tel{
+    padding: 5px;
+}
+
+.button {
+    padding      : 5px;
+    font         : bold .6em sans-serif;
+    border       : 2px solid #333;
+    border-radius: 5px;
+    background   : none;
+    cursor       : pointer;
+}
+
+.button btn-primary {
+    padding      : 5px;
+    font         : bold .6em sans-serif;
+    border       : 2px solid #333;
+    border-radius: 5px;
+    background   : none;
+    cursor       : pointer;
+}
+
+
 
 
 /*Pagina responsive*/

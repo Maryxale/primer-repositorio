@@ -5,26 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5bbb4c0b76.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="favicon" href="./Img/favicon-32x32.png"/>
     <title>Quienes Somos</title>
 </head>
 <body>
-    <header>
-        <img src="../Proyecto TP/Img/New Adventure.png" width="200" height="150" alt="">
+    <header class="logo">
+        <img src="./Img/Logo_TP. final.png" width="200" height="150" alt="">
         <h1 class="titulos">UN MOMENTO DIFERENTE</h1>
     </header>
     
-    <nav id="menu">
-        <ul>
-            <li><a href="Inicio.html">Inicio</a></li>
-            <li><a href="Quienessomos.html">Quienes Somos</a></li>
-            <li><a href="Carilo.html">Carilo</a></li>
-            <li><a href="SanRafael.html">San Rafael</a></li>
-            <li><a href="Contactanos.html">Contactanos</a></li>
-        </ul>
+    <nav>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu">
+            <i class="fa-solid fa-bars-progress"></i>
+        </label>
+        <div class="menu">
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Quienessomos.html">Quienessomos</a></li>
+                <li><a href="Carilo.html">Carilo</a></li>
+                <li><a href="SanRafael.html">SanRafael</a></li>
+                <li><a href="Contactanos.html">Contactanos</a></li>
+            </ul>
+        </div>
     </nav> 
     
-    <br><br><br><br><br><br>
+    
     <main>
+        <div class="seccion">
+            <h1 class="titulos">¿Quienes Somos?</h1>
+            <p>Tu Nueva Aventura surge como un emprendimiento familiar unido por un único deseo: estar en contacto con la naturaleza, el agua y el ritmo tranquilo que traen las ciudades con pocos habitantes.
+                Tras vender un hotel familiar emplazado en pleno Centro Porteño, continuamos con lo que mejor sabemos hacer en el oeste de la Argentina, en la ciudad de San Rafael, Mendoza. También en el este, bordeando el Oceano Atlántico, en los bellos bosques de Cariló.
+                Nos une el agua, su tranquilidad y frescura. 
+                Te invitamos a conocer nuestras propuestas.
+                </p>
+        </div>
         <div>
             <section class="seccion">
                 <h2 class="titulos">Nuevas Experiencias y Ambiente Relax</h2>
@@ -36,9 +53,9 @@
                 <article>
                     <div class="container">
                     
-                    <img class="foto1" src="../Proyecto TP/Para proyecto TP obligatorio/centro de excursion carilo.jpg" alt="" width="250px" height="250px">
-                    <img class="foto2" src="../Proyecto TP/Para proyecto TP obligatorio/valle-grande san rafael.jpg" alt=""width="250px" height="250px">
-                    <img class="foto3" src="../Proyecto TP/Para proyecto TP obligatorio/bosque-carilo.png" alt="" width="200px" height="200px">
+                    <img class="foto1" src="Para proyecto TP obligatorio/centro de excursion carilo.jpg" alt="" width="250px" height="250px">
+                    <img class="foto2" src="Para proyecto TP obligatorio/valle-grande san rafael.jpg" alt=""width="250px" height="250px">
+                    <img class="foto3" src="Para proyecto TP obligatorio/bosque-carilo.png" alt="" width="200px" height="200px">
                     </div>
                     
                     <div>
@@ -52,7 +69,14 @@
         <aside></aside>
     </main>
     <footer>
-
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <div class="textoinferior">
+            <h3 class="titulos">Te ofrecemos</h3>
+            <p>Hospedarte en las mejores cabañas,Guiarte a los mejores lugares,Experiencias unicas</p>
+            
+        </div>
     </footer>
 </body>
 </html>

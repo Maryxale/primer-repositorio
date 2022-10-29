@@ -8,56 +8,148 @@ html{
     height: 100%;
 }
 
-body,header,main,footer{
-    border: 3px solid aqua;
+body,header,nav,main,footer{
+    /*border: 3px solid aqua;*/
     min-height: 50px;
     margin: 0.5rem;
+    min-width: 400px;
 }
 
-main{
-    min-height: 100px;
+
+
+.logo{
+    background-color: #F3FF33;
+    text-align: center;
 }
+
+.main{
+    min-height: 200px;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 20px;
+    
+
+}
+
+
 
 .titulos{
-    font: 30px Arial, sans serif;
+    font-family: 'Dancing Script', cursive;
     color: navy;
     
 }
 
+h2,h1{
+    text-align: center;
+}
 
+.seccion p{
+    font-size: 20px;
+}
 
-#menu ul{
-    padding: 0;
+footer{
+    min-height: 100px;
+    background-color: #F3FF33;
+}
+
+.textoinferior{
+    text-align: right;
+} 
+
+i{
+    font-size: 40px;
+    color: navy;
+    
+}
+
+/*navbar responsive*/
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    width: 100%;
+    background: #4e94ab;
+}
+
+#btn-menu{
+    display: none;
+}
+
+nav label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+nav label :hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+.menu ul{
     margin: 0;
     list-style: none;
-}
-
-#menu ul li{
-    float: left;
-    
+    padding: 0;
+    display: flex;
 
 }
 
-#menu a{
-    text-decoration: none;
+.menu li{
+    flex-grow: 1;
+    text-align: center;
+
+}
+
+.menu li :hover{
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+.menu li a{
     display: block;
-    color: whitesmoke;
-    padding: 12px 26px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    
+    padding: 15px 20px;
+    color: #fff ;
+    text-decoration: none;
 }
 
-#menu{
-    background-color: #337DFF;
-    width: 1000px;
-    height: 52px;
-}
+@media (max-width:650px){
+    nav label{
+        display: block;
+    }
 
+    .menu{
+        position: absolute;
+        background: #4e94ab;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 1px solid #fff;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+
+
+}
 
 
 main{
     min-height: 200px;
+    
 }
 
 .container{
@@ -70,14 +162,14 @@ main{
 .foto1{
     width: 30vw;
     height: 30vh;
-    border: gray solid 2px;
+    border: rgb(255, 255, 255) solid 2px;
     display: inline-block;
 }
 
 .foto2{
     width: 30vw;
     height: 30vh;
-    border: gray solid 2px;
+    border: rgb(255, 255, 255) solid 2px;
     display: inline-block;
 }
     
@@ -86,9 +178,202 @@ main{
 .foto3{
     width: 30vw;
     height: 30vh;
+    border: rgb(255, 255, 255) solid 2px;
+    display: inline-block;
+}
+
+.flexbox2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.fotoA{
+    width: 30vw;
+    height: 30vh;
     border: gray solid 2px;
     display: inline-block;
 }
+
+.fotoB{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.fotoC{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.contenido1 p{
+    font-size: 20px;
+    padding: 10px;
+    
+
+}
+
+/*flexbox carilo*/
+
+.flexbox3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.f1{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.f2{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.f3{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.f4{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.f5{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.f6{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.f8{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.f9{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.f10{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.f11{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.f12{
+    width: 30vw;
+    height: 30vh;
+    border: gray solid 2px;
+    display: inline-block;
+}
+
+.principal{
+    font-size: 20px;
+    padding: 15px;
+
+}
+
+#name{
+    padding: 5px;
+}
+
+#msg{
+    padding: 30px;
+}
+
+#adults{
+    padding: 5px;
+}
+
+#mail{
+    padding: 5px;
+}
+
+#tel{
+    padding: 5px;
+}
+
+.button {
+    padding      : 5px;
+    font         : bold .6em sans-serif;
+    border       : 2px solid #333;
+    border-radius: 5px;
+    background   : none;
+    cursor       : pointer;
+}
+
+.button btn-primary {
+    padding      : 5px;
+    font         : bold .6em sans-serif;
+    border       : 2px solid #333;
+    border-radius: 5px;
+    background   : none;
+    cursor       : pointer;
+}
+
+
+
+
+/*Pagina responsive*/
+
+.contenedor{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+@media only screen and (max-width: 650px){
+    
+    
+    
+}
+
+
+
+
+@media only screen and (max-width: 500px){
+    
+
+} 
+
 
 
 

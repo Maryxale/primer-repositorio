@@ -5,50 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5bbb4c0b76.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styleCarrusel.css">
+    <link rel="icon" type="favicon" href="./Img/favicon-32x32.png"/>
     <title>Tu Propia Aventura</title>
 </head>
 <body>
-    <header>
-        <img src="../Proyecto TP/Img/New Adventure.png" width="200" height="150" alt="">
+    <div class="conteneder">
+    <header class="logo">
+        <img src="./Img/Logo_TP. final.png" width="200" height="150" alt="">
         <h1 class="titulos">UN MOMENTO DIFERENTE</h1>
     </header>
     
-    <nav id="menu">
-        <ul>
-            <li><a href="Inicio.html">Inicio</a></li>
-            <li><a href="Quienessomos.html">Quienes Somos</a></li>
-            <li><a href="Carilo.html">Carilo</a></li>
-            <li><a href="SanRafael.html">San Rafael</a></li>
-            <li><a href="Contactanos.html">Contactanos</a></li>
-        </ul>
+    <nav>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu">
+            <i class="fa-solid fa-bars-progress"></i>
+        </label>
+        <div class="menu">
+            <ul>
+                <li><a href="Inicio.html">Inicio</a></li>
+                <li><a href="Quienessomos.html">Quienessomos</a></li>
+                <li><a href="Carilo.html">Carilo</a></li>
+                <li><a href="SanRafael.html">SanRafael</a></li>
+                <li><a href="Contactanos.html">Contactanos</a></li>
+            </ul>
+        </div>
     </nav> 
     
-    <br><br><br><br><br><br>
     <main>
         <div class="principal">
-            <section >
-                
-            </section>
-            <section>
+            
                 <article>
-                    <div>
-                    
-                    
-                    </div>
-                    
-                    <div>
-                        <h3></h3>
-                        <p></p>
+                    <div class="contenido1">
+                        <p>Por ella existe todo lo que conocemos. El agua, principal fuente de vida.
+                        <br><br>
+                            Cerca de ella, creamos una propuesta que se ajusta a tus necesidades. En el llano o la montaña su espíritu, complementándose con todos los otros elementos de la naturaleza, hará posible una estadía placentera y reconfortante.
+                            <br><br>
+                            ¡Vení a recargar energías! Conocenos.</p>
+                        
                     </div>
                     
                 </article>
+                <section class="auto-slider">
+                    <div id="slider">
+                        <figure>
+                            <img src="img carrusel new/img1.jpg" alt="">
+                            <img src="img carrusel new/img2.jpg" alt="">
+                            <img src= "img carrusel new/img3.jpg" alt="">
+                            <img src="img carrusel new/img4.jpg" alt="">
+                            <img src="img carrusel new/img2.jpg" alt="">
+                        </figure>
+                        <div class="indicator"></div>
+            </div>
+            </section>
+
+            <section>
+                
             </section>
         </div>
-        <aside></aside>
+        <br><br><br><br>
+        <aside>
+            <h2 class="titulos">El hospedaje mas placentero y la mejor atención</h2>
+            <br><br><br><br>
+            <div class="flexbox2">
+                    
+                <img class="fotoA" src="./Img/cabaña carilo.jpg" alt="" width="250px" height="250px">
+                <img class="fotoB" src="./Img/cabaña hotel carilo.jpg" alt=""width="250px" height="250px">
+                <img class="fotoC" src="./Img/hotel mendoza.jpg" alt="" width="200px" height="200px">
+                </div>
+                
+                <div>
+        </aside>
     </main>
+    <br><br><br><br><br><br><br><br>
     <footer>
-
+        
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <div class="textoinferior">
+            <h3 class="titulos">Te ofrecemos</h3>
+            <p>Hospedarte en las mejores cabañas,Guiarte a los mejores lugares,Experiencias unicas</p>
+            
+        </div>
+        
     </footer>
+    </div>
 
     
 </body>
